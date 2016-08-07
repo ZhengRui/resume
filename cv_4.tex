@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\color{text1}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+% \name{Zheng Rui} % Your name
+% \address{Hong Kong University of Science and Technology, Hong Kong} % Your secondary addess (optional)
+% \address{(00852)~$\cdot$~5343~$\cdot$~5857 \\ rzhengphy@gmail.com} % Your phone number and email
+% \address{http://zhengrui.github.io} % Your address
+
+\begin{document}
+
+\vspace{-5mm}
+% \begin{textblock*}{100mm}(.85\textwidth,-4cm)
+    % \rotatebox{310}{\colorbox{red!30}{\hspace{50pt}\color{headings}\bf \fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae\hspace{50pt}}}}
+% \end{textblock*}
+
+{\centering
+    \colorbox{white} {
+        \color{black}\RaisedText{\Huge\bf \fontspec[Variant = 2]{Zapfino} Zheng Rui} % Your name
+    }
+\hfill
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+    \raisebox{-1pt}{\textifsymbol{18}} & {\fontsize{1em}{1em}\selectfont Hong Kong University of Science and Technology} \\ % Address
+\raisebox{-1pt}{\Mobilefone} & +852 53435857 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:rzhengphy@gmail.com}{rzhengphy@gmail.com} \\ % Email address
+\Mundus & \href{http://zhengrui.github.io}{http://zhengrui.github.io}\\ % Website
+\faGithub & \href{http://github.com/zhengrui}{http://github.com/zhengrui}\\
+\faLinkedin & \href{http://hk.linkedin.com/in/rzhenguniq}{http://hk.linkedin.com/in/rzhenguniq}
+\end{tabular}
+}}\\[15pt]
+}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{About}
+% Trying to be computer vision expert, data analysist guru, full stack developer.
+
+% I am a doer, and I haven't achieved much. If you see my potential, let's have a chat.
+% \end{rSection}
+
+\begin{rSection}{Education}
+
+{\bf Hong Kong University of Science and Technology, Hong Kong} \hfill {\bf 2013 - 2016} \\
+\hspace*{2em}{\it Thesis: Context-aware visual privacy control} \\
+\hspace*{2em}M.Phil. in Computer Science and Engineering
+
+{\bf Institute of Physics, Chinese Academy of Sciences, Beijing} \hfill {\bf 2006 - 2012} \\
+\hspace*{2em}{\it Thesis: Monte Carlo methods and applications on magnetic models} \\
+\hspace*{2em}Ph.D. in Computational Physics
+
+{\bf Huazhong University of Science and Technology, Wuhan} \hfill {\bf 2002 - 2006} \\
+\hspace*{2em}{\it Thesis: Colossal magnetoresistance in Perovskite Oxide} \\
+\hspace*{2em}B.S. in Applied Physics
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Hong Kong University of Science and Technology}{Aug 2013 - Present}{Research / Teaching Assistant}{Hong Kong}
+\item Lead development in multiple research projects, including {\it OCR on Google Glass}, {\it Mean First Passage Time and Cover Time of random walks on different graphs}, {\it Context-aware visual privacy control}. Deploy state-of-the-art deep learning models on mobile for tasks including scene classification, face recognition, gesture recognition.
+
+\item Develop multiple tools and libraries, including group discussion website, image annotation tool, mobile streaming multiplexing / demultiplexing tool, face alignment library on Android, Caffe mobile library on Android.
+
+\item Administration of lab servers. Provide consultancies for other projects on problems related to machine / deep learning, computer vision and Linux.
+
+\item TA of Courses {\it Operating System}, {\it Python Bridging Course}, {\it Social Network Analysis}.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Beijing Zhong Ruan Co.}{Apr 2013 - Aug 2013}{Back End Developer}{Beijing}
+\item Develop a web based monitoring system for nuclear power plants in Shandong province.
+\item Set up development environment for the team and lead back end development.
+\end{rSubsection}
+
+\begin{rSubsection}{ENIN Tech. Inc.}{Aug 2012 - Oct 2012}{R\&D Engineer}{Beijing}
+\item Design data reconciliation and flow optimization algorithms.
+\end{rSubsection}
+
+\begin{rSubsection}{Institute of Physics, CAS}{Sep 2006 - Jun 2012}{Research Assistant}{Beijing}
+\item Design and implement algorithms for the study of phase transitions in both classical and quantum magnetic models. Focused on Monte Carlo methods and density matrix renormalization group based methods.
+\item First principle calculations of band structure and magnetic properties of half-metal materials.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{Sample Projects}{}{}{}
+
+\item {\bf\em Cardea} - A context aware privacy control system which can enhance users' visual privacy based on their context specific privacy settings. Context includes location, surrounding scene and people. Users can also temporarily overwrite their settings using gestures. \href{https://github.com/ZhengRui/cardea}{Code}.
+
+\item {\bf\em Caffe Mobile Lib} - An extension from \href{https://github.com/sh1r0/caffe-android-lib}{Caffe-android-lib}, now supports running multiple deep neural networks in Android and batch feature extraction. \href{https://github.com/ZhengRui/caffe-android-lib}{Code}.
+
+\item {\bf\em Android Face Alignment Lib} - A JNI library which enables android phones to not only detect faces, but also detect facial landmarks and thus do face alignment. \href{https://github.com/ZhengRui/FaceAlignmentJNI}{Code}.
+
+\item {\bf\em Annota} - Two versions: one is a Flask Web App and another is a PyQt App. Both enable users to annotate images. The annotated images can be used to train detection models. \href{https://github.com/ZhengRui/ImgAnnotaWeb}{Flask App Code}, \href{https://github.com/ZhengRui/ImgAnnotaPyQt4}{Qt App Code}.
+
+\item {\bf\em Grp-Meeting} - A Flask App which supports publishing contents and posting comments with Markdown syntax. Math symbols are well rendered both in contents and comments thus it is helpful for inner research group discussion. \href{https://github.com/ZhengRui/grpmeeting}{Code}.
+
+\item {\bf\em Arabic Audio Book} - An audio pdf for learning Arabic. Pronunciation, pictures, and short sentences are used together to help understanding and memorizing each word. \href{http://bit.ly/28Qbqj2}{Download}.
+
+\end{rSubsection}
+
+\begin{rSubsection}{Course Projects}{}{}{}
+
+\item {\bf\em Single View Metrology} - Stereo from single image based on prior knowledge about few scene coordinates. \href{http://zhengrui.github.io/singleviewmetrology.html}{Blog Post}.
+
+\item {\bf\em Dense Light Stereo} - Stereo from massive images densely sampled with different light sources. \href{http://zhengrui.github.io/denselightstereo.html}{Blog Post}.
+
+\item {\bf\em Image Scissor} - Implement lasso function which most image editing tools have. \href{http://zhengrui.github.io/iscissor.html}{Blog Post}.
+
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Computer Skills}
+
+\begin{tabular}{ @{\hspace{2.0em}} >{\bfseries}l @{\hspace{6ex}} l }
+OS & Ubuntu, OSX, CentOS, Android\\
+Languages & C++, Python, Bash, Javascript, Java, Matlab, Lua, Fortran, SQL\\
+Tools & \TeX, Vim, WingIDE, Android Studio, Xcode, Inkscape, Omnigraffle\\
+Libs & OpenCV, Caffe, Torch7, TensorFlow\\
+Frameworks & Flask, Node
+\end{tabular}
+
+\end{rSection}
+
+
+\begin{rSection}{Publications}
+
+% \begin{itemize}[leftmargin=*] % no indentation
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny\JackStarBold}]
+\item Jiayu Shu, Sokol Kosta, Rui Zheng and Pan Hui, \emph{Talk2Me: A Framework for Device-to-Device Augmented Reality Social Network}, submitted to \textsf{INFOCOM 2017}.
+
+\item Jiayu Shu, Rui Zheng and Pan Hui, \emph{Context-Aware Visual Privacy Control}, accepted in \textsf{MobiSys16 WKSHPS}.
+
+\item Jiayu Shu, Rui Zheng and Pan Hui, \emph{Interactive Visual Privacy Control with Gestures}, accepted in \textsf{MobiSys16 Demo}. \href{https://github.com/ZhengRui/mobisys16demo}{Code}.
+
+\item Tongfeng Weng, Jie Zhang, Moein Khajehnejad, Michael Small, Rui zheng, and Pan Hui, \emph{Navigation by anomalous random walks on complex networks}, accepted in \textsf{Nature Scientific Reports}. \href{https://github.com/ZhengRui/mean-first-passage}{Code}.
+
+\item Zheng Rui and Liu Bang-Gui, \emph{Stable two-dimensional ferromagnets made of regular single-layered lattices of single-molecule nanomagnets with perpendicular anisotropy}, \textsf{J. Appl. Phys.} \underline{106}, 054316 (2009). \href{http://bit.ly/29aBRQD}{PDF}.
+
+\item Zheng Rui and Liu Bang-Gui, \emph{Quantum Monte Carlo study of the phase transition for a generalized Two-Dimensional Staggered Dimerized Heisenberg Model}, \textsf{Chin. Phys. B.} \underline{21}, 116401 (2012). \href{http://bit.ly/29aBDJb}{PDF}.
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Miscellaneous}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny\JackStarBold}]
+    \item Language levels: native {\it Chinese}, full professional proficient {\it English}.
+    \item Course records: {\it Machine Learning} {\color{DarkOrchid} A}, {\it Computer Vision} {\color{DarkOrchid} A+}, {\it Bayesian Network} {\color{DarkOrchid} A-}, {\it Algorithm Design and Analysis} {\color{DarkOrchid} A}.
+    \item Hobbies: excellent at {\it table tennis} and {\it basketball}, good at {\it billiards}.
+\end{itemize}
+\end{rSection}
+
+\end{document}
