@@ -28,7 +28,7 @@
 
 
 \usepackage{fontspec,xltxtra,xunicode}
-\setromanfont[Mapping=tex-text]{Linux Libertine} % Main document font
+\setromanfont[Mapping=tex-text]{Linux Libertine O} % Main document font
 
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 \usepackage{hyperref}
@@ -288,12 +288,15 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
+\newenvironment{rSubsection}[6]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {\bf #2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\bf\em #3} \hfill {\bf\em #4} % Italic job title and location
-  }\smallskip
+   \\
+   {\bf\em #3} \hfill {\bf\em #4} % Italic job title and location
+ }\ifthenelse{\equal{#5}{}}{}{
+   \\
+   {\bf\em #5} \hfill {\bf\em #6} % For promoted job title
+ }\smallskip
    \begin{list}{\raisebox{0.25ex}{\tiny\JackStarBold}}{\leftmargin=2.5em} % \cdot used for bullets, no indentation
    \itemsep -0.0em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
